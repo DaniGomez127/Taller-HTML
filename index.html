@@ -1,0 +1,202 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Estilo personalizado para hacer más estético el contenido */
+        h1, h2 {
+            color: #fff;
+            font-weight: bold;
+        }
+        .header {
+            background: linear-gradient(to right, #004aad, #ffcc00); /* Degradado */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+        .header img {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            width: 80px;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .table {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .table th {
+            background-color: #0A74DA;
+            color: white;
+        }
+        .table td, .table th {
+            padding: 15px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #0A74DA;
+            border-color: #0A74DA;
+        }
+        .btn-secondary {
+            background-color: #1a1a1a;
+            border-color: #1a1a1a;
+        }
+        .btn-secondary:hover {
+            background-color: #444444;
+            border-color: #444444;
+        }
+        /* Estilo para la sección de Historia */
+        .history-section {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: justify;
+        }
+        .history-section h2 {
+            color: #004aad;
+        }
+        .history-section img {
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+    <title>Leyendas del Real Madrid</title>
+</head>
+<body>
+    <div class="container text-center my-5">
+        <!-- Título principal con logo y fondo -->
+        <div class="header mb-4">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" alt="Real Madrid Logo">
+            <h1 class="mb-0">Leyendas del Real Madrid</h1>
+        </div>
+        <p>Descubre algunas de las figuras más icónicas que han moldeado la historia del Real Madrid, uno de los clubes más exitosos del mundo.</p>
+        
+        <!-- Sección de tarjetas -->
+        <div class="row d-flex justify-content-center">
+            <!-- Tarjeta 1: Alfredo Di Stéfano -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/alfredo.jpg" class="card-img-top" alt="Alfredo Di Stéfano">
+                    <div class="card-body">
+                        <h5 class="card-title">Alfredo Di Stéfano</h5>
+                        <p class="card-text">Una leyenda verdadera que jugó para el Real Madrid entre 1953 y 1964, ayudando al club a ganar numerosos títulos nacionales e internacionales.</p>
+                        <a href="https://es.wikipedia.org/wiki/Alfredo_Di_St%C3%A9fano" target="_blank" class="btn btn-primary">Saber más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Cristiano Ronaldo -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/cristiano.jpg" class="card-img-top" alt="Cristiano Ronaldo">
+                    <div class="card-body">
+                        <h5 class="card-title">Cristiano Ronaldo</h5>
+                        <p class="card-text">Uno de los mejores jugadores de todos los tiempos, Ronaldo se convirtió en el máximo goleador del Real Madrid y lideró al club a múltiples títulos de la Champions League.</p>
+                        <a href="https://es.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank" class="btn btn-primary">Saber más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Raúl González -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/real gonzales.jpg" class="card-img-top" alt="Raúl González">
+                    <div class="card-body">
+                        <h5 class="card-title">Raúl González</h5>
+                        <p class="card-text">Raúl fue el símbolo del Real Madrid durante más de una década. Conocido por su liderazgo y habilidad para marcar en momentos cruciales.</p>
+                        <a href="https://es.wikipedia.org/wiki/Ra%C3%BAl_(futbolista)" target="_blank" class="btn btn-primary">Saber más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de tablas -->
+        <div class="my-5">
+            <h2>Trofeos del Real Madrid</h2>
+            <table class="table table-striped table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <th>Trofeo</th>
+                        <th>Número de Títulos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UEFA Champions League</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>La Liga</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Copa del Rey</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Supercopa de la UEFA</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Mundial de Clubes de la FIFA</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sección de historia -->
+        <div class="history-section my-5">
+            <h2>Historia del Real Madrid</h2>
+            <p>Fundado en 1902, el Real Madrid es uno de los clubes más antiguos y prestigiosos del mundo. A lo largo de su historia, ha ganado más de 30 títulos de La Liga, 15 Champions League y numerosos trofeos nacionales e internacionales. Con leyendas como Di Stéfano, Raúl, Cristiano Ronaldo y muchos otros, el Real Madrid ha dejado una huella imborrable en el fútbol mundial.</p>
+            <p>El club se ha destacado no solo por su éxito dentro del campo, sino también por su capacidad de adaptarse a los tiempos modernos, convirtiéndose en una referencia tanto deportiva como comercial. Desde sus humildes comienzos, el Real Madrid ha sabido convertirse en una institución mundial, con millones de aficionados en todo el planeta.</p>
+            <img src="./imagenes/real.jpg" alt="Historia del Real Madrid">
+        </div>
+
+        <div class="my-5">
+            <h2>Récords del Real Madrid</h2>
+            <table class="table table-striped table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <th>Récord</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Máximo Goleador</td>
+                        <td>Cristiano Ronaldo (451 goles)</td>
+                    </tr>
+                    <tr>
+                        <td>Más Apariciones</td>
+                        <td>Raúl González (741 partidos)</td>
+                    </tr>
+                    <tr>
+                        <td>Más Títulos de Champions como Jugador</td>
+                        <td>Paco Gento (6 títulos)</td>
+                    </tr>
+                    <tr>
+                        <td>Mayor Victoria en La Liga</td>
+                        <td>Real Madrid 11-1 Barcelona (1943)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pie de página con un botón -->
+        <div class="mt-5">
+            <a href="https://www.realmadrid.com/es-ES" target="_blank" class="btn btn-secondary btn-lg">Visitar el sitio oficial del Real Madrid</a>
+        </div>
+    </div>
+</body>
+</html>
